@@ -1,0 +1,15 @@
+print("Digite 10 números e descubra quantos são pares ou impares 🥳🥳")
+count=10
+num=int(input("Digite um número: "))
+par= 0
+impar= 0
+
+while count>0:
+	if num%2==0:
+		par+=1
+	if num%2!=0:
+		impar+=1	
+	num=int(input("Digite um número: "))
+	count-=1
+print("Você digitou", impar, "números impares e", par, "números pares")
+	
