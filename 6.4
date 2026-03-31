@@ -1,3 +1,14 @@
 print("Calculadora Python")
-ope=(input("Digite a operação: "))
-print(eval(ope))
+
+while True:
+    try:
+        ope = input("Digite a operação: ")
+        resultado = eval(ope)
+        print("Resultado:", resultado)
+        break
+
+    except ZeroDivisionError:
+        print("Erro: divisão por zero não é permitida. Tente novamente.")
+
+    except Exception:
+        print("Operação inválida. Tente novamente.")
